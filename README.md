@@ -17,3 +17,13 @@ pip3 install -r requirements.txt
 ```bash
 pip3 install <module_name> && pip3 freeze > requirements.txt
 ```
+
+## To test with PyTest 
+```bash
+pytest --cov-report term-missing --cov=src tests/
+```
+
+## To test with PyTest Watcher
+```bash
+ptw . --cov-report term-missing --cov=src tests/
+```
